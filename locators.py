@@ -9,3 +9,11 @@ class LoginLocators:
     error_message = (By.CLASS_NAME, "error-message-container")
     menu_button = (By.ID, "react-burger-menu-btn")
     logout_button = (By.ID, "logout_sidebar_link")
+
+
+class InventoryLocators:
+    add_to_cart_backpack = (By.ID, "add-to-cart-sauce-labs-backpack")
+    go_to_cart_button = (By.ID, "shopping_cart_container")
+
+class CartLocators:
+    
