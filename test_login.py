@@ -33,7 +33,6 @@ def test01_valid_username_valid_password():
     assert logged_in_url in driver.current_url
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -62,7 +61,6 @@ def test02_invalid_username_valid_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Username and password do not match any user in this service"
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -91,7 +89,6 @@ def test03_valid_username_invalid_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Username and password do not match any user in this service"
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -120,7 +117,6 @@ def test04_invalid_username_invalid_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Username and password do not match any user in this service"
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -148,7 +144,6 @@ def test05_empty_username_valid_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Username is required"
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -176,7 +171,6 @@ def test06_empty_username_invalid_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Username is required"
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -203,7 +197,6 @@ def test07_valid_username_empty_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Password is required"
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -230,7 +223,6 @@ def test08_invalid_username_empty_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Password is required"
 
     time.sleep(2)
-
     driver.quit()
 
 
@@ -254,5 +246,4 @@ def test09_empty_username_empty_password():
     assert driver.find_element(*LoginLocators.error_message).text, "Epic sadface: Username is required"
 
     time.sleep(2)
-
     driver.quit()
