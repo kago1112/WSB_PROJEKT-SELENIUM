@@ -1,4 +1,3 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
@@ -12,8 +11,9 @@ class LoginLocators:
 
 
 class InventoryLocators:
+    backpack_item = (By.ID, "item_4_title_link")
     add_to_cart_backpack = (By.ID, "add-to-cart-sauce-labs-backpack")
     go_to_cart_button = (By.ID, "shopping_cart_container")
-
-class CartLocators:
-    
+    checkout_button = (By.ID, "checkout")
+    continue_shopping_button = (By.ID, "continue-shopping")
+    remove_backpack_button =  (By.ID, "remove-sauce-labs-backpack")
