@@ -85,7 +85,6 @@ def test12_removing_item_from_cart_cart_page():
     cart_url = "https://www.saucedemo.com/cart.html"
     assert cart_url in driver.current_url
 
-    #verify that the item is in the cart
     assert driver.find_element(*InventoryLocators.backpack_item).is_displayed()
     assert driver.find_element(*InventoryLocators.checkout_button).is_displayed()
     assert driver.find_element(*InventoryLocators.continue_shopping_button).is_displayed()
@@ -135,7 +134,6 @@ def test13_removing_item_from_cart_inventory_page():
     cart_url = "https://www.saucedemo.com/cart.html"
     assert cart_url in driver.current_url
 
-    #verify that the item is in the cart
     assert driver.find_element(*InventoryLocators.backpack_item).is_displayed()
     assert driver.find_element(*InventoryLocators.checkout_button).is_displayed()
     assert driver.find_element(*InventoryLocators.continue_shopping_button).is_displayed()

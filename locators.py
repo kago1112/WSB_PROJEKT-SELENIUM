@@ -17,3 +17,10 @@ class InventoryLocators:
     checkout_button = (By.ID, "checkout")
     continue_shopping_button = (By.ID, "continue-shopping")
     remove_backpack_button =  (By.ID, "remove-sauce-labs-backpack")
+
+
+class SortingLocators:
+    sort_A_to_Z = (By.XPATH, "//option[@value='az']")
+    sort_Z_to_A = (By.XPATH, "//option[@value='za']")
+    sort_low_to_high = (By.XPATH, "//option[@value='lohi']")
+    sort_high_to_low = (By.XPATH, "//option[@value='hilo']")
